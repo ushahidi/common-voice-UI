@@ -56,3 +56,11 @@ export interface ApiError {
   message: string
   errors?: Record<string, string[]>
 }
+
+export interface ValidationVotePayload {
+  userId: string
+  clipId: string
+  vote: 'yes' | 'no'
+  language: string
+  timestamp: string
+}
